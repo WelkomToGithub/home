@@ -1,0 +1,38 @@
+.text_block {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    border-radius: 30px;
+    border: solid 1px #616194;
+    
+    &:hover {
+        box-shadow: 0px -1px 6px 3px #616194 inset;
+    }
+    
+    .text_block_title {
+        font-weight: 900;
+        color: #616194;
+    }
+    
+    .text_block_paragraph {
+        margin: 0.625rem 0 1.32rem 0;
+        color: #333333;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .text_block {
+        padding-left: calc(16px + (40 - 16)*((100vw - 320px) / (1200 - 320)));
+        padding-right: calc(16px + (40 - 16)*((100vw - 320px) / (1200 - 320)));
+    }
+}
+
+
+@media (max-width: 48em) {
+    .text_block_paragraph {
+        font-size: 0.85rem;
+    }
+}
+

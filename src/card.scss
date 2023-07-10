@@ -1,0 +1,60 @@
+
+.card-item {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 13rem;
+    height: 13.2rem;
+    margin: 1.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 1;
+    padding-top: 2.5rem;
+    &:hover {
+        box-shadow: -1px 3px 9px 5px #cecef9;
+    }  
+    .card-image {
+        width: 3.84rem;
+        height: 3.85rem;
+        align-self: center;
+        align-content: center;
+        fill: #9797c6
+    }
+    .card-title {
+        color: #9898c6;
+        font-size: 1rem;
+        text-transform: capitalize; 
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-item {
+        width: calc(104px + (208 - 104)*((100vw - 320px) / (1200 - 320)));
+        height: calc(104px + (211 - 104)*((100vw - 320px) / (1200 - 320)));
+        padding-top: calc(24px + (40 - 24)*((100vw - 320px) / (1200 - 320)));
+    }
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .card-image {
+        width: calc(40px + (61.5 - 40)*((100vw - 320px) / (1200 - 320)));
+        height: calc(40px + (61.5 - 40)*((100vw - 320px) / (1200 - 320)));
+    }
+}
+
+.plumber {
+    margin-left: 0.8rem;
+}
+
+
+
+@media (max-width: 48em) {
+    .card-card-title {
+        font-size: 0.8rem;
+    }
+}

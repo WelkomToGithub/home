@@ -1,0 +1,30 @@
+.social_media {
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 1rem;
+    width: 160px;
+    .social_media_img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media (max-width: 48em) {
+    .social_media {
+        top: 0.3rem
+    }
+}
+
+@media (max-width: 1200px) {
+    .social_media {
+        width: calc(70px + (160 - 70)*((100vw - 320px) / (1200 - 320)));
+        .social_media_img {
+            height: calc(10px + (24 - 10)*((100vw - 320px) / (1200 - 320)));
+            width: calc(10px + (24 - 10)*((100vw - 320px) / (1200 - 320)));
+        }
+    }
+}
